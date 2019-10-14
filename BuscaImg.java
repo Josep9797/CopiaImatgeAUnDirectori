@@ -12,11 +12,7 @@ import java.nio.file.attribute.BasicFileAttributes;
 
 public class BuscaImg {
     
-    
-    
     public static void main(String[] args) {
-
-        String[] ex = {"png","img","jpg","gif"};
         
         Path dir = Paths.get("C:\\Users\\Josep Serra\\Desktop\\Proba");
 
@@ -65,9 +61,7 @@ public class BuscaImg {
     
     static int numFoto = 0;
     public static void Copiar(File ruta, String extension) throws FileNotFoundException, IOException{
-        
-        //int num = (int) (Math.random() * 10);
-                
+         
         FileInputStream fis = new FileInputStream(ruta);
         
         File fitxerDesti = new File("C:\\Users\\Josep Serra\\Desktop\\Fotos\\"+numFoto+extension);
